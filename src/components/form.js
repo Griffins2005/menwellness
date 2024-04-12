@@ -73,7 +73,7 @@ const MenWellness = () => {
   const updateQuote = async () => {
     try {
       const { _id, topic, quote, author } = quoteData;
-      await axios.put(`https://menwellnessquotes.onrender.com/api/quotes/${_id}`, { topic, quote, author });
+      await axios.put(`https://menwellnessquotes.onrender.com/quotes/${_id}`, { topic, quote, author });
       fetchQuotes(); // Refresh quotes after update
       setQuoteData({ _id: '', topic: '', quote: '', author: '' }); // Reset form fields
       showMessage("Quote updated successfully", "success");
