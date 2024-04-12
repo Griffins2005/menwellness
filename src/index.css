@@ -1,13 +1,215 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-image: url(https://brothersinarmsscotland.co.uk/media/1468/grayscale-photo-of-man-in-black-v-neck-shirt-with-black-90764-re-edit.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.men-wellness-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.quotes-form {
+  margin-bottom: 20px;
+}
+
+.quotes-form input,
+.quotes-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.quotes-form button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.quote-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.quote-item {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.quote-actions {
+  margin-top: 10px;
+}
+
+.quote-actions button {
+  margin-right: 10px;
+}
+
+.men-wellness-container {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 8px 30px; /* Adjust padding as needed */
+  border: 5px solid #333;
+  border-radius: 20px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.search-bar::placeholder {
+  color: #aaa;
+  position: relative;
+}
+h3 {
+  color: #45a049;
+}
+
+.quotes-form {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 5px;
+  border: 5px solid whitesmoke;
+  border-radius: 15px;
+  height: 15rem;
+}
+
+input[type="text"],textarea {
+  width: 35rem;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.quote-list {
+  list-style: none;
+  padding: 0;
+}
+
+.quote-item {
+  margin-bottom: 20px;
+}
+
+.quote-content {
+  margin-bottom: 10px;
+}
+
+.quote-actions button {
+  margin-right: 10px;
+}
+/* Animate title */
+h1 {
+  animation-name: slideInFromTop;
+  animation-duration: 1s;
+  color: #007bff;
+  font-size: 80px;
+}
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Animate buttons */
+button {
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Animate quotes */
+.quote-item {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Add animations */
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+/* Message animation */
+.message {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  border-radius: 5px;
+  animation: slideIn 0.5s ease forwards, slideOut 0.5s ease 4.5s forwards;
+}
+
+.message.error {
+  background-color: #ffcccc;
+  color: #cc0000;
+}
+
+.message.success {
+  background-color: #ccffcc;
+  color: #009900;
+}
+.quote-content {
+  margin-bottom: 10px;
+}
+.quote-content em {
+  font-style: italic; /* Italics for the author */
 }
